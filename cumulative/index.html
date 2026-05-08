@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>누적재고관리 | iloom SCM 대시보드</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR','Montserrat',sans-serif;background:#F8F8F8;color:#333;font-size:14px;line-height:1.6}
+.iloom-nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #E0E0E0;z-index:1000}
+.iloom-nav-inner{max-width:1400px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.iloom-nav-logo{font-family:Montserrat,sans-serif;font-weight:700;font-size:22px;color:#c80a1e;text-decoration:none;padding:14px 0}
+.iloom-nav-logo .iloom-nav-divider{display:inline-block;width:1px;height:14px;background:#E0E0E0;margin:0 10px;vertical-align:middle}
+.iloom-nav-logo .iloom-nav-sub{font-family:'Noto Sans KR',sans-serif;font-weight:500;font-size:13px;color:#333}
+.iloom-nav-tabs{display:flex;gap:0;flex-wrap:wrap}
+.iloom-tab{padding:16px 18px;font-size:13px;color:#666;text-decoration:none;border-bottom:2px solid transparent;font-weight:500}
+.iloom-tab:hover{color:#333}
+.iloom-tab.active{color:#c80a1e;border-bottom-color:#c80a1e;font-weight:700}
+.iloom-tab.placeholder{color:#bbb;cursor:not-allowed}
+.iloom-tab .badge-soon{font-size:9px;background:#F8F8F8;color:#999;padding:1px 5px;margin-left:4px}
+.empty-state{max-width:600px;margin:80px auto;text-align:center;padding:40px 24px;background:#fff;border:1px solid #E0E0E0}
+.empty-state h1{font-size:20px;font-weight:700;color:#333;margin-bottom:12px}
+.empty-state p{font-size:14px;color:#666;line-height:1.7;margin-bottom:8px}
+.empty-state .badge{display:inline-block;background:#F8F8F8;color:#999;padding:4px 12px;font-size:11px;letter-spacing:0.5px;margin-bottom:18px}
+</style>
+</head>
+<body>
+<nav class="iloom-nav">
+  <div class="iloom-nav-inner">
+    <a class="iloom-nav-logo" href="../">iloom<span class="iloom-nav-divider"></span><span class="iloom-nav-sub">SCM 대시보드</span></a>
+    <div class="iloom-nav-tabs">
+      <a class="iloom-tab" href="../spec-change/">사양변경</a>
+      <a class="iloom-tab" href="../outlet/">아울렛 재고</a>
+      <a class="iloom-tab placeholder" href="javascript:void(0)">신제품 분석<span class="badge-soon">SOON</span></a>
+      <a class="iloom-tab active" href="javascript:void(0)">누적재고관리<span class="badge-soon">SOON</span></a>
+    </div>
+  </div>
+</nav>
+<div class="empty-state">
+  <div class="badge">PHASE 3 예정</div>
+  <h1>누적재고관리 페이지 준비 중입니다</h1>
+  <p>종합·상세·월별 시트와 카테고리별 단품 드릴다운을 외부망에서 확인할 수 있도록 준비하고 있어요.</p>
+  <p>완료 시 본 페이지가 자동 업데이트됩니다.</p>
+</div>
+</body>
+</html>
