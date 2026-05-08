@@ -2,6 +2,8 @@
 
 일룸 SCM팀 운영 대시보드의 외부망 배포용 정적 사이트입니다.
 
+**URL: https://hojunda777-jpg.github.io/iloom-scm-dashboard/**
+
 ## 구성
 
 | 경로 | 시트 | 상태 |
