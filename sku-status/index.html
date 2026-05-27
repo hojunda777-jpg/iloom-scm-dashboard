@@ -308,6 +308,14 @@ th.iloom-col-filter-active::after {
 
   table.pivot tr.prevcmp td { background:#F4F7FB; color:#555; font-size:11.5px; }
   table.pivot tr.prevcmp td.lbl { background:#EAF0F8; font-weight:500; color:#555; }
+  /* 전월비 행 증감 색상 (회색 override보다 우선) */
+  table.pivot tr.prevcmp td.pos { color:#c80a1e; font-weight:600; }
+  table.pivot tr.prevcmp td.neg { color:#1d4ed8; font-weight:600; }
+  table.pivot tr.prevcmp td.zero { color:#bbb; }
+  /* 요약 카드 배지 색상 */
+  .ss-summary .pos { color:#c80a1e; font-weight:700; }
+  .ss-summary .neg { color:#1d4ed8; font-weight:700; }
+  .ss-summary .zero { color:#bbb; }
 
   .ss-summary { background:#F8F8F8; border:1px solid #E0E0E0; padding:12px 16px; margin:0 0 14px; }
   .ss-sum-title { font-size:12px; color:#999; margin-bottom:8px; }
@@ -584,7 +592,27 @@ th.iloom-col-filter-active::after {
               
             
             
-            <td class="zero">·</td><td class="zero">·</td><td class="zero">·</td><td class="zero">·</td>
+            
+              
+              
+                <td class="neg">▼3.9</td>
+              
+            
+              
+              
+                <td class="pos">▲7.0</td>
+              
+            
+              
+              
+                <td class="pos">▲35.8</td>
+              
+            
+              
+              
+                <td class="neg">▼1.6</td>
+              
+            
           </tr>
         
           
@@ -786,7 +814,27 @@ th.iloom-col-filter-active::after {
               
             
             
-            <td class="zero">·</td><td class="zero">·</td><td class="zero">·</td><td class="zero">·</td>
+            
+              
+              
+                <td class="neg">▼4.1</td>
+              
+            
+              
+              
+                <td class="neg">▼4.6</td>
+              
+            
+              
+              
+                <td class="pos">▲28.3</td>
+              
+            
+              
+              
+                <td class="neg">▼3.9</td>
+              
+            
           </tr>
         
       </tbody>
@@ -871,7 +919,12 @@ th.iloom-col-filter-active::after {
             <td>0.09</td>
             
             
-              <td class="zero">–</td><td class="zero">–</td>
+              <td class="pos">
+                6,697,000
+              </td>
+              <td class="pos">
+                ▲0.0%p
+              </td>
             
           </tr>
         
@@ -1251,7 +1304,7 @@ th.iloom-col-filter-active::after {
           <td>1.18</td>
           
             <td class="neg">-1,433,497,550</td>
-            <td class="zero">0%p</td>
+            <td class="neg" title="총 재고금액 증감률">▼9.5%</td>
           
         </tr>
       </tbody>
