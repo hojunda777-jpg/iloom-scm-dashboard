@@ -8,14 +8,17 @@
 
 | 경로 | 시트 | 상태 |
 |------|------|------|
-| `/spec-change/` | 사양변경 관리 | ✅ Live |
-| `/outlet/` | 아울렛 재고 현황 | ✅ Live |
-| `/new-product/` | 신제품 분석 | 🚧 Phase 2 예정 |
-| `/cumulative/` | 누적재고관리 | 🚧 Phase 3 예정 |
+| `/spec-change/` | 사양변경 관리 | Live |
+| `/outlet/` | 아울렛 재고 현황 | Live |
+| `/new-product/` | 신제품 분석 | Live |
+| `/cumulative/` | 누적재고관리 | Live |
+| `/supply/` | 공급량 관리 | Live |
+| `/sku-status/` | 운영품목 현황 | Live |
+| `/scp/` | SCP 실적현황 | Live |
 
 ## 갱신
 
-내부 PC에서 다음을 실행하면 4개 시트가 모두 재생성되어 GitHub Pages에 푸시됩니다.
+내부 PC에서 다음을 실행하면 7개 시트가 모두 재생성되어 GitHub Pages에 푸시됩니다.
 
 ```bash
 python build_all.py
@@ -25,6 +28,6 @@ python build_all.py
 
 ## 데이터
 
-- **소스**: 사내 MS SQL `fgdw` (재고/수주/출고 등)
+- **소스**: 사내 MS SQL `fgdw` (재고/수주/출고 등) + BigQuery `iloom-scm.inventory.*` (계획·예측)
 - **갱신 주기**: 매일 오전 (사용자 morning 루틴 시점)
 - **기준일자**: 각 페이지 우측 상단에 표시
